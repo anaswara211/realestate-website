@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JustHome - Property Finder</title>
+    <link rel="stylesheet" href="button-icon-styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+    <!-- Header Section -->
+  
+    <!-- Navbar --> 
+    
+<section class="hero-section text-center text-white d-flex flex-column align-items-center justify-content-center" >
+    <nav class="navbar navbar-expand-lg navbar-collapse-sm navbar-light bg-light py-0 shadow-sm position-absolute top-5 start-20 ">
+        <div class="container">
+            <!-- Logo -->
+            <a  href="#">
+                <img src="./images/logo.svg.png" alt="JustHome Logo" class="logo"> <!-- Replace with actual logo image -->
+            </a>
+            
+            <!-- Toggle button for mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- Navbar Links -->
+            <div class="collapse navbar-collapse ms-0" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Listings</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Members</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+                
+                <!-- Contact Info and Button -->
+                <div class="contact-info d-flex align-items-center">
+                    <span class="me-3 text-black">📞 +68 685 88666</span>
+                    <span class="user-icon me-3" style="color:black;"><i class="fa-solid fa-user"></i></span>
+                    <button class="btn btn-outline-primary">Add Property</button>
+                </div>
+            </div>
+        </div>
+    </nav> 
+    <!-- Hero Content -->
+    <!-- <div class="container mt-5">
+        <h1 class="mt-5">Believe in finding it</h1>
+        <p>Search properties for sale and to rent in the UK</p>
+        <div class="search-bar mt-4 d-flex justify-content-center position-relative">
+            <input type="text" class="form-control form-control-lg" placeholder="Enter Name, Keywords...">
+            <button class="btn btn-warning btn-lg search-btn position-relative">🔍</button>
+        </div>
+        <div class="btn-group" role="group" aria-label="Property Type">
+            <button type="button" class="btn custom-btn active">Modern Villa</button>
+            <button type="button" class="btn custom-btn">Apartment</button>
+            <button type="button" class="btn custom-btn">Town House</button>
+        </div>
+    </div> -->
+
+    <!-- </div> -->
+<!-- </section>  -->
+<div class="container text-center" >
+    <button class="btn btn-outline-primary mt-6 ">LET US GUIDE YOUR HOME</button>
+    <h1 class="text-4xl font-bold mt-4">Believe in finding it</h1>
+    <p class="text-lg mt-3">Search properties for sale and to rent in the UK</p>
+
+      <!-- Search Bar Container -->
+      <div class="container mt-5 w-50">
+        <div class="position-relative d-flex justify-content-center " >
+            <!-- Search Input -->
+            <input type="text" class="form-control search-input" placeholder="Enter Name, Keywords...">
+            <!-- Search Button -->
+            <button class="btn search-btn position-absolute end-0" style="background-image: url('./images/Button\ \(2\).png'); background-size: contain; background-repeat: no-repeat; background-position: center; border-radius: 50%; width: 42px; height: 45px;flex-grow: 0.1;"></button>
+                <span class="visually-hidden">Search</span> <!-- Accessible text for screen readers -->
+            </button>
+        </div>
+    </div>
+    </div>
+
+    <p class="text-lg mt-5">What are you looking for?</p>
+
+    <div class="property-options">
+        <div class="text-center mt-5 sm:mb-3">
+          <!-- Modern Villa Button -->
+          <button type="button" class="btn custom-btn mb-4 sm:mb-0 sm:py-2 mx-2 sm:mx-5">
+            <img src="./images/div.type-icon.png" alt="Modern Villa" class="icon-img w-6 h-6 sm:w-8 sm:h-8 inline-block"> <!-- Adjust the icon size for responsiveness -->
+            <span class="ms-2">Modern Villa</span>
+          </button>
+          <!-- Apartment Button -->
+          <button type="button" class="btn custom-btn mb-4 sm:mb-0 sm:py-2 mx-2 sm:mx-5">
+            <img src="./images/div.type-icon (2).png" alt="Apartment" class="icon-img w-6 h-6 sm:w-8 sm:h-8 inline-block"> <!-- Adjust the icon size for responsiveness -->
+            <span class="ms-2">Apartment</span>
+          </button>
+          <!-- Town House Button -->
+          <button type="button" class="btn custom-btn mb-4 sm:mb-2 sm:py-2 mx-2 sm:mx-5">
+            <img src="./images/div.type-icon (1).png" alt="Town House" class="icon-img w-6 h-6 sm:w-8 sm:h-8 inline-block"> <!-- Adjust the icon size for responsiveness -->
+            <span class="ms-2">Town House</span>
+          </button>
+        </div>
+      </div>
+      
+    </div>
+</div>
+</section>
+
+
+<section class="featured-properties py-10">
+    <div class="container mx-auto px-4">
+        <h2 class="text-center mb-8 text-4xl md:text-5xl font-bold">Featured Properties</h2>
+        <p class="text-center mb-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <div class="flex justify-center mb-8 space-x-4">
+            <button class="border border-gray-300 px-4 py-2 rounded hover:bg-gray-200 transition">All Properties</button>
+            <button class="border border-gray-300 px-4 py-2 rounded hover:bg-gray-200 transition">For Sale</button>
+            <button class="border border-gray-300 px-4 py-2 rounded hover:bg-gray-200 transition">For Rent</button>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Property Card 1 -->
+            <div class="card bg-white shadow-lg rounded overflow-hidden">
+                <div class="relative">
+                    <img src="./images/property1.png" class="w-full h-48 object-cover" alt="Luxury Family Home">
+                    <div class="absolute top-2 left-2 flex space-x-2">
+                        <div class="bg-green-500 text-white px-2 py-1 text-xs rounded">For Sale</div>
+                        <div class="bg-yellow-500 text-white px-2 py-1 text-xs rounded">Featured</div>
+                    </div>
+                </div>
+                <div class="p-4">
+                    <h5 class="text-lg font-bold">Luxury Family Home</h5>
+                    <p class="text-gray-600"><i class="bi bi-geo-alt"></i> 1800-1818 79th St</p>
+                    <p class="text-red-500 font-bold">$395,000</p>
+                    <p class="text-gray-600">
+                        <i class="bi bi-house-door"></i> 4 Beds &bull; 1 Bath &bull; 400 sqft
+                    </p>
+                </div>
+            </div>
+            <!-- Property Card 2 -->
+            <div class="card bg-white shadow-lg rounded overflow-hidden">
+                <div class="relative">
+                    <img src="./images/prop2.png" class="w-full h-48 object-cover" alt="Skyper Pool Apartment">
+                    <div class="absolute top-2 left-2">
+                        <div class="bg-green-500 text-white px-2 py-1 text-xs rounded">For Sale</div>
+                    </div>
+                </div>
+                <div class="p-4">
+                    <h5 class="text-lg font-bold">Skyper Pool Apartment</h5>
+                    <p class="text-gray-600"><i class="bi bi-geo-alt"></i> 1020 Bloomingdale Ave</p>
+                    <p class="text-red-500 font-bold">$280,000</p>
+                    <p class="text-gray-600">
+                        <i class="bi bi-house-door"></i> 4 Beds &bull; 2 Baths &bull; 450 sqft
+                    </p>
+                </div>
+            </div>
+            <!-- Property Card 3 -->
+            <div class="card bg-white shadow-lg rounded overflow-hidden">
+                <div class="relative">
+                    <img src="./images/prop3.png" class="w-full h-48 object-cover" alt="North Dillard Street">
+                    <div class="absolute top-2 left-2">
+                        <div class="bg-blue-500 text-white px-2 py-1 text-xs rounded">For Rent</div>
+                    </div>
+                </div>
+                <div class="p-4">
+                    <h5 class="text-lg font-bold">North Dillard Street</h5>
+                    <p class="text-gray-600"><i class="bi bi-geo-alt"></i> 4330 Bell Shoals Rd</p>
+                    <p class="text-red-500 font-bold">$250/month</p>
+                    <p class="text-gray-600">
+                        <i class="bi bi-house-door"></i> 4 Beds &bull; 2 Baths &bull; 400 sqft
+                    </p>
+                </div>
+            </div>
+
+            <!-- Repeat similar structure for additional property cards -->
+            <!-- Property Card 4 -->
+            <div class="card bg-white shadow-lg rounded overflow-hidden">
+                <div class="relative">
+                    <img src="./images/prop4.png" class="w-full h-48 object-cover" alt="North Dillard Street">
+                    <div class="absolute top-2 left-2">
+                        <div class="bg-blue-500 text-white px-2 py-1 text-xs rounded">For Rent</div>
+                    </div>
+                </div>
+                <div class="p-4">
+                    <h5 class="text-lg font-bold">North Dillard Street</h5>
+                    <p class="text-gray-600"><i class="bi bi-geo-alt"></i> 4330 Bell Shoals Rd</p>
+                    <p class="text-red-500 font-bold">$250/month</p>
+                    <p class="text-gray-600">
+                        <i class="bi bi-house-door"></i> 4 Beds &bull; 2 Baths &bull; 400 sqft
+                    </p>
+                </div>
+            </div>
+            <div class="card bg-white shadow-lg rounded overflow-hidden">
+                <div class="relative">
+                    <img src="./images/prop5.png" class="w-full h-48 object-cover" alt="North Dillard Street">
+                    <div class="absolute top-2 left-2">
+                        <div class="bg-blue-500 text-white px-2 py-1 text-xs rounded">For Rent</div>
+                    </div>
+                </div>
+                <div class="p-4">
+                    <h5 class="text-lg font-bold">North Dillard Street</h5>
+                    <p class="text-gray-600"><i class="bi bi-geo-alt"></i> 4330 Bell Shoals Rd</p>
+                    <p class="text-red-500 font-bold">$250/month</p>
+                    <p class="text-gray-600">
+                        <i class="bi bi-house-door"></i> 4 Beds &bull; 2 Baths &bull; 400 sqft
+                    </p>
+                </div>
+            </div>
+<div class="card bg-white shadow-lg rounded overflow-hidden">
+                <div class="relative">
+                    <img src="./images/prop6.png" class="w-full h-48 object-cover" alt="North Dillard Street">
+                    <div class="absolute top-2 left-2">
+                        <div class="bg-blue-500 text-white px-2 py-1 text-xs rounded">For Rent</div>
+                    </div>
+                </div>
+                <div class="p-4">
+                    <h5 class="text-lg font-bold">North Dillard Street</h5>
+                    <p class="text-gray-600"><i class="bi bi-geo-alt"></i> 4330 Bell Shoals Rd</p>
+                    <p class="text-red-500 font-bold">$250/month</p>
+                    <p class="text-gray-600">
+                        <i class="bi bi-house-door"></i> 4 Beds &bull; 2 Baths &bull; 400 sqft
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Repeat the same structure for more property cards as needed -->
+        </div>
+
+        <div class="text-center mt-10 ">
+            <button class="bg-yellow-500 text-white px-8 py-3 rounded-lg text-lg hover:bg-yellow-600 transition">
+                See All Listing &rarr;
+            </button>
+        </div>
+    </div>
+  
+
+        <section class="bg-gray-100 ">
+            <div class="py-5 mt-10 ">
+                <div class="container mx-auto px-4">
+                    <div class="flex flex-wrap -mx-4">
+                        <!-- Left Images Section -->
+                        <div class="w-full md:w-1/2 px-4 mb-4 md:mb-0">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 bg-white p-4 rounded-lg shadow-lg">
+                                <div class="relative col-span-2">
+                                    <img src="./images/h21.jpg (1).png" class="rounded-lg w-full h-auto" alt="Image 1">
+                                </div>
+                        </div>
+                    </div>
+                        <!-- Right Text Section -->
+                        <div class="w-full md:w-1/2 px-4 flex items-center">
+                            <div>
+                                <h2 class="text-3xl font-bold mb-4">How It Works? Find a Perfect Home</h2>
+                                <p class="mb-6 text-gray-700">Pellentesque egestas elementum egestas faucibus sem. Velit nunc egestas ut morbi. Leo diam diam.</p>
+                                <ul class="space-y-4">
+                                    <li class="flex items-start">
+                                        <div class="icon bg-yellow-500 text-white rounded-full p-3">
+                                            <i class="bi bi-search text-xl"></i>
+                                        </div>
+                                        <div class="ml-4">
+                                            <h5 class="text-lg font-semibold">Find Real Estate</h5>
+                                            <p class="text-gray-600">Sumo petentium ut per, at his wisim utinam adipiscing. Est ei graeco.</p>
+                                        </div>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <div class="icon bg-yellow-500 text-white rounded-full p-3">
+                                            <i class="bi bi-person text-xl"></i>
+                                        </div>
+                                        <div class="ml-4">
+                                            <h5 class="text-lg font-semibold">Meet Realtor</h5>
+                                            <p class="text-gray-600">Sumo petentium ut per, at his wisim utinam adipiscing. Est ei graeco.</p>
+                                        </div>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <div class="icon bg-yellow-500 text-white rounded-full p-3">
+                                            <i class="bi bi-key text-xl"></i>
+                                        </div>
+                                        <div class="ml-4">
+                                            <h5 class="text-lg font-semibold">Take The Keys</h5>
+                                            <p class="text-gray-600">Sumo petentium ut per, at his wisim utinam adipiscing. Est ei graeco.</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+
+        <section class="bg-gray-50 py-12 mt-12 me-5 ms-5 mb-8">
+            <div class="container mx-auto px-4 mb-10">
+              <div class="flex flex-col lg:flex-row items-center justify-between">
+                <!-- Left Section -->
+                <div class="lg:w-1/2 mb-8 lg:mb-0">
+                  <h2 class="text-3xl lg:text-4xl font-bold mb-4">What our customers are <br>saying  us?</h2>
+                  <p class="mb-6 text-gray-600">Various versions have evolved over the years, sometimes by<br> accident, sometimes on purpose injected humour and the like.</p>
+                  <div class="flex items-center mb-4">
+                    <div class="mr-8">
+                      <span class="block text-2xl font-bold">10m+</span>
+                      <span class="block text-gray-500">Happy People</span>
+                    </div>
+                    <div>
+                      <span class="block text-2xl font-bold">4.88</span>
+                      <div class="flex text-yellow-500">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-half"></i>
+                      </div>
+                      <span class="block text-gray-500">Overall rating</span>
+                      <span><img src="./images/stars.png (1).png"></span>
+                    </div>
+                  </div>
+                </div>
+          
+                <!-- Right Section -->
+                <div class="lg:w-1/2 flex items-center">
+                  <div class="bg-white p-6 rounded-lg">
+                    <div class="flex items-center mb-4">
+                      <img class="w-12 h-12 rounded-full object-cover mr-4" src="./images/test1.png.png" alt="User photo">
+                      <div>
+                        <h3 class="text-lg font-bold">Cameron Williamson</h3>
+                        <p class="text-gray-500">Designer</p>
+                      </div>
+                    </div>
+                    <p class="text-gray-600">Searches for multiplexes, property comparisons, and the loan estimator. Works great. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolores.</p>
+                    <div class="flex space-x-4 mt-6">
+                      <button class="border-no rounded-full p-2">
+                        <img src="./images/Button (7).png">
+                      </button>
+                      <button class="border-no rounded-full p-2">
+                        <img src="./images/Button (6).png">
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          
+              <!-- Logos Section -->
+              <div class="mt-12 text-center mb-5">
+                <p class="mb-6 text-gray-600">Thousands of world's leading companies trust Space</p>
+                <div class="mt-12 mb-12">
+                  <img src="./images/div.slick-list.png" alt="Logo 1" class="mx-auto">
+                </div>
+              </div>
+            </div>
+            </div>
+          </section>
+        </section>
+        <section class="bg-gray-50 py-12 mt-12">
+            <div class="container mx-auto px-4">
+              <!-- Team Section -->
+              <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-2"style="margin-top:120px">Meet Our Team Of Experts</h2>
+                <p class="text-gray-600 ">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+              <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Team Member 1 -->
+                <div class="text-center">
+                  <img class="w-full rounded-lg mb-4" src="./images/john.png" alt="John Powell">
+                  <h3 class="text-lg font-bold text-left">John Powell</h3>
+                  <p class="text-gray-500 text-left">Service Support</p>
+                </div>
+                <!-- Team Member 2 -->
+                <div class="text-center">
+                  <img class="w-full rounded-lg mb-4" src="./images/Thomas.png" alt="Thomas Powell">
+                  <h3 class="text-lg font-bold text-left">Thomas Powell</h3>
+                  <p class="text-gray-500 text-left">Marketing</p>
+                </div>
+                <!-- Team Member 3 -->
+                <div class="text-center">
+                  <img class="w-full rounded-lg mb-4" src="./images/tom.png" alt="Tom Wilson">
+                  <h3 class="text-lg font-bold text-left">Tom Wilson</h3>
+                  <p class="text-gray-500 text-left">Designer</p>
+                </div>
+                <!-- Team Member 4 -->
+                <div class="text-center ">
+                  <img class="w-full rounded-lg mb-4" src="./images/samuel.png" alt="Samuel Palmer">
+                  <h3 class="text-lg font-bold text-left">Samuel Palmer</h3>
+                  <p class="text-gray-500 text-left">Marketing</p>
+                </div>
+              </div>
+          
+              <!-- Real Estate Markets Section -->
+              <div class="text-center mt-12 sm:mt-24">
+                <h2 class="text-2xl sm:text-3xl font-bold mb-4">Popular Real Estate Markets</h2>
+                <p class="text-gray-600 mb-8 sm:mb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <div class="flex flex-wrap justify-center gap-4 sm:gap-6">
+                  <!-- Market Tag 1 -->
+                  <button class="bg-white border border-gray-300 rounded-full px-4 py-2 sm:py-3 text-gray-700">
+                    The Villages, FL real estate
+                  </button>
+                  <!-- Market Tag 2 -->
+                  <button class="bg-white border border-gray-600 rounded-full px-4 py-2 sm:py-3 text-gray-700">
+                    New York, Real estate
+                  </button>
+                  <!-- Market Tag 3 -->
+                  <button class="bg-white border border-gray-600 rounded-full px-4 py-2 sm:py-3 text-gray-700">
+                    Madera, CA real estate
+                  </button>
+                  <!-- Market Tag 4 -->
+                  <button class="bg-white border border-gray-600 rounded-full px-4 py-2 sm:py-3 text-gray-700">
+                    Fontana, CA real estate
+                  </button>
+                  <!-- Market Tag 5 -->
+                  <button class="bg-white border border-gray-600 rounded-full px-4 py-2 sm:py-3 text-gray-700">
+                    Moreno Valley, CA real estate
+                  </button>
+                  <!-- Market Tag 6 -->
+                  <button class="bg-white border border-gray-600 rounded-full px-4 py-2 sm:py-3 text-gray-700">
+                    Aurora, IL real estate
+                  </button>
+                  <!-- Market Tag 7 -->
+                  <button class="bg-white border border-gray-600 rounded-full px-4 py-2 sm:py-3 text-gray-700">
+                    Perris, CA real estate
+                  </button>
+                  <!-- Market Tag 8 -->
+                  <button class="bg-white border border-gray-600 rounded-full px-4 py-2 sm:py-3 text-gray-700">
+                    Minnesota Lake, MN real estate
+                  </button>
+                  <!-- Market Tag 9 -->
+                  <button class="bg-white border border-gray-600 rounded-full px-4 py-2 sm:py-3 text-gray-700">
+                    Woodbridge, VA real estate
+                  </button>
+                </div>
+              </div>
+              
+
+          <footer class="bg-green-900 text-white py-10 mt-8">
+            <div class="container mx-auto px-4">
+                <div class="justify-content-between flex items-center">
+                <!-- Logo Section -->
+                <div class="lg:col-span-1 ">
+                  <img src="./images/logo.svg.png" alt="JustHome Logo"style="width: 180px;height:70px">
+                </div>
+          <!-- Follow Us Section -->
+          <span class="mt-8 text-center ms-10">
+            <p class="uppercase tracking-wider mb-4">Follow Us</p>
+            <div class="flex justify-center space-x-4 ">
+              <a href="#" class="text-white"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="text-white"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="text-white"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </span>
+              </div>
+          <hr>
+          <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-8 mt-5">
+                <!-- Subscribe Section -->
+                <div class="lg:col-span-2">
+                  <h5 class="text-lg font-bold mb-3">Subscribe</h5>
+                  <form class="flex flex-col space-y-4">
+                    <input type="email" placeholder="Your e-mail" class="px-4 py-2 bg-green-800 text-white rounded-md focus:outline-none">
+                    <button class="bg-green-700 text-white px-4 py-2 rounded-md flex items-center justify-center">
+                      Send <span class="ml-2">→</span>
+                    </button>
+                  </form>
+                  <p class="mt-3 text-sm text-green-300">Subscribe to our newsletter to receive our weekly feed.</p>
+                  <hr>
+                </div>
+        
+                <!-- Discover Section -->
+                <div>
+                  <h5 class="text-lg font-bold mb-3">Discover</h5>
+                  <ul class="space-y-2 text-green-300">
+                    <a href="#"><li>Miami</li></a>
+                    <a href="#"><li>New York</li></a>
+                    <a href="#"><li>Chicago</li></a>
+                    <a href="#"><li>Florida</li></a>
+                    <a href="#"><li>Los Angeles</li></a>
+                    <a href="#"><li>San Diego</li></a>
+                  </ul>
+                </div>
+          
+                <!-- Quick Links Section -->
+                <div>
+                  <h5 class="text-lg font-bold mb-3">Quick Links</h5>
+                  <ul class="space-y-2 text-green-300">
+                    <a href="#"><li>About</li></a>
+                    <a href="#"><li>Contact</li></a>
+                    <a href="#"><li>FAQs</li></a>
+                    <a href="#"><li>Blog</li></a>
+                    <a href="#"><li>Pricing Plans</li></a>
+                    <a href="#"><li>Privacy Policy</li></a>
+                    <a href="#"><li>Terms & Conditions</li></a>
+                  </ul>
+                </div>
+          
+                <!-- Contact Us Section -->
+                <div>
+                  <h5 class="text-lg font-bold mb-3">Contact Us</h5>
+                  <a href="#"><p class="text-green-300">hi@justhome.com</p></a>
+                  <a href="#"><p class="text-green-300">(123) 456-7890</p></a>
+                </div>
+          
+                <!-- Address Section -->
+                <div>
+                  <h5 class="text-lg font-bold mb-3">Our Address</h5>
+                  <p class="text-green-300">99 Fifth Avenue, 3rd Floor</p>
+                  <p class="text-green-300">San Francisco, CA 1980</p>
+                
+          
+                <!-- Get the App Section -->
+                
+                 
+                    <a href="#" class="bg-green-700 text-white mt-5 ms-3 me-3 rounded-md inline-block">
+                     <img src="./images/Link (2).png" alt="apple">
+                    </a>
+                    <a href="#" class="bg-green-700 text-white ms-3 me-3  rounded-md inline-block">
+                        <img src="./images/Link (3).png" alt="apple">
+                       </a>
+                  </div>
+                </div>
+          
+              </div>
+          
+          <br>
+          <br>
+          <br>
+              <hr>
+          
+              <!-- Copyright Section -->
+              <div class="text-center text-green-300 mt-10">
+                <p>&copy; 2024. JustHome</p>
+              </div>
+            </div>
+          </footer>
+          
+            <!-- Bootstrap JS -->
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</section>
+</html>
